@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="258" failures="0" name="ca.ulaval.glo4002.theproject.CucumberTest" time="0.033" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.66-b17"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/alexandre/git/glo-4002"/>
+    <property name="java.runtime.version" value="1.8.0_66-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.16.0-55-generic"/>
+    <property name="user.home" value="/home/alexandre"/>
+    <property name="user.timezone" value="America/Montreal"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="alexandre"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher integration-test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="fr"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_66"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit inexistant" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit inexistant" name="Et un num\u00E9ro de carte associ\u00E9 \u00E0 aucun compte" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit inexistant" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit inexistant" name="Alors la demande est refus\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit inexistant" name="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit inexistant" time="0.001"/>
+  <testcase classname="| 01\/14 | refus\u00E9 |" name="\u00C9tant donn\u00E9 que la date d\&apos;aujourd\&apos;hui est le 02\/15" time="0"/>
+  <testcase classname="| 01\/14 | refus\u00E9 |" name="Et une demande avec une date d\&apos;expiration 01\/14 pour la carte" time="0"/>
+  <testcase classname="| 01\/14 | refus\u00E9 |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 01\/14 | refus\u00E9 |" name="Alors la demande est refus\u00E9" time="0.001"/>
+  <testcase classname="| 01\/14 | refus\u00E9 |" name="| 01\/14 | refus\u00E9 |" time="0.001"/>
+  <testcase classname="| 01\/15 | refus\u00E9 |" name="\u00C9tant donn\u00E9 que la date d\&apos;aujourd\&apos;hui est le 02\/15" time="0"/>
+  <testcase classname="| 01\/15 | refus\u00E9 |" name="Et une demande avec une date d\&apos;expiration 01\/15 pour la carte" time="0"/>
+  <testcase classname="| 01\/15 | refus\u00E9 |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 01\/15 | refus\u00E9 |" name="Alors la demande est refus\u00E9" time="0"/>
+  <testcase classname="| 01\/15 | refus\u00E9 |" name="| 01\/15 | refus\u00E9 |" time="0"/>
+  <testcase classname="| 02\/15 | ok |" name="\u00C9tant donn\u00E9 que la date d\&apos;aujourd\&apos;hui est le 02\/15" time="0"/>
+  <testcase classname="| 02\/15 | ok |" name="Et une demande avec une date d\&apos;expiration 02\/15 pour la carte" time="0"/>
+  <testcase classname="| 02\/15 | ok |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 02\/15 | ok |" name="Alors la demande est ok" time="0"/>
+  <testcase classname="| 02\/15 | ok |" name="| 02\/15 | ok |" time="0.001"/>
+  <testcase classname="| 03\/15 | ok |" name="\u00C9tant donn\u00E9 que la date d\&apos;aujourd\&apos;hui est le 02\/15" time="0"/>
+  <testcase classname="| 03\/15 | ok |" name="Et une demande avec une date d\&apos;expiration 03\/15 pour la carte" time="0.001"/>
+  <testcase classname="| 03\/15 | ok |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 03\/15 | ok |" name="Alors la demande est ok" time="0"/>
+  <testcase classname="| 03\/15 | ok |" name="| 03\/15 | ok |" time="0"/>
+  <testcase classname="| 1000 | ok |" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="| 1000 | ok |" name="Et une carte de cr\u00E9dit associ\u00E9e \u00E0 un compte avec une limite de cr\u00E9dit de 1200" time="0"/>
+  <testcase classname="| 1000 | ok |" name="Et un montant demand\u00E9 de 1000" time="0"/>
+  <testcase classname="| 1000 | ok |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 1000 | ok |" name="Alors la demande est ok" time="0"/>
+  <testcase classname="| 1000 | ok |" name="| 1000 | ok |" time="0.001"/>
+  <testcase classname="| 1200 | ok |" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="| 1200 | ok |" name="Et une carte de cr\u00E9dit associ\u00E9e \u00E0 un compte avec une limite de cr\u00E9dit de 1200" time="0"/>
+  <testcase classname="| 1200 | ok |" name="Et un montant demand\u00E9 de 1200" time="0"/>
+  <testcase classname="| 1200 | ok |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 1200 | ok |" name="Alors la demande est ok" time="0"/>
+  <testcase classname="| 1200 | ok |" name="| 1200 | ok |" time="0"/>
+  <testcase classname="| 2000 | refus\u00E9 |" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="| 2000 | refus\u00E9 |" name="Et une carte de cr\u00E9dit associ\u00E9e \u00E0 un compte avec une limite de cr\u00E9dit de 1200" time="0"/>
+  <testcase classname="| 2000 | refus\u00E9 |" name="Et un montant demand\u00E9 de 2000" time="0"/>
+  <testcase classname="| 2000 | refus\u00E9 |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 2000 | refus\u00E9 |" name="Alors la demande est refus\u00E9" time="0"/>
+  <testcase classname="| 2000 | refus\u00E9 |" name="| 2000 | refus\u00E9 |" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions admissibles" name="\u00C9tant donn\u00E9 un marchand avec des transactions admissibles en attente" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions admissibles" name="Quand il soumet les transactions" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions admissibles" name="Alors les transactions sont confirm\u00E9es" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions admissibles" name="Sc\u00E9nario: Soumission de transactions admissibles" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand n\&apos;ayant aucune transaction \u00E0 son effectif" name="\u00C9tant donn\u00E9 un marchand sans transaction" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand n\&apos;ayant aucune transaction \u00E0 son effectif" name="Quand il soumet aucune transaction" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand n\&apos;ayant aucune transaction \u00E0 son effectif" name="Alors rien n\&apos;est effectu\u00E9" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand n\&apos;ayant aucune transaction \u00E0 son effectif" name="Et aucune erreur n\u2019est report\u00E9e" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand n\&apos;ayant aucune transaction \u00E0 son effectif" name="Sc\u00E9nario: Soumission de transactions par un marchand n\&apos;ayant aucune transaction \u00E0 son effectif" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Soumission d\&apos;une transaction d\u00E9j\u00E0 confirm\u00E9e" name="\u00C9tant donn\u00E9 une transaction d\u00E9j\u00E0 confirm\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission d\&apos;une transaction d\u00E9j\u00E0 confirm\u00E9e" name="Quand le marchand soumet cette transaction" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission d\&apos;une transaction d\u00E9j\u00E0 confirm\u00E9e" name="Alors la transaction reste dans son statut actuel" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission d\&apos;une transaction d\u00E9j\u00E0 confirm\u00E9e" name="Sc\u00E9nario: Soumission d\&apos;une transaction d\u00E9j\u00E0 confirm\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions ayant une transaction inadmissible" name="\u00C9tant donn\u00E9 un marchand avec des transactions admissibles" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions ayant une transaction inadmissible" name="Et ayant des transactions inadmissible" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions ayant une transaction inadmissible" name="Quand il soumet les transactions inadmissibles" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions ayant une transaction inadmissible" name="Alors aucune transaction n\u2019est confirm\u00E9e" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions ayant une transaction inadmissible" name="Et la requ\u00EAte est rejet\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions ayant une transaction inadmissible" name="Sc\u00E9nario: Soumission de transactions ayant une transaction inadmissible" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand inexistant" name="\u00C9tant donn\u00E9 un num\u00E9ro de marchand inexistant" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand inexistant" name="Quand le marchand inexistant soumet une liste de transaction" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand inexistant" name="Alors la resource est donc introuvable" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions par un marchand inexistant" name="Sc\u00E9nario: Soumission de transactions par un marchand inexistant" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions inexistantes" name="\u00C9tant donn\u00E9 des transactions inexistante" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions inexistantes" name="Quand le marchand soumet ces transactions inexistantes" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions inexistantes" name="Alors une erreur se produit" time="0"/>
+  <testcase classname="Sc\u00E9nario: Soumission de transactions inexistantes" name="Sc\u00E9nario: Soumission de transactions inexistantes" time="0"/>
+  <testcase classname="Sc\u00E9nario: Code postal de la demande non reconnu" name="\u00C9tant donn\u00E9 un code postal non reconnu" time="0"/>
+  <testcase classname="Sc\u00E9nario: Code postal de la demande non reconnu" name="Quand je fais un achat \u00E0 ce code postal" time="0"/>
+  <testcase classname="Sc\u00E9nario: Code postal de la demande non reconnu" name="Alors la demande est consid\u00E9r\u00E9e non frauduleuse" time="0"/>
+  <testcase classname="Sc\u00E9nario: Code postal de la demande non reconnu" name="Sc\u00E9nario: Code postal de la demande non reconnu" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte bloqu\u00E9e" name="\u00C9tant donn\u00E9 une carte bloqu\u00E9e" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte bloqu\u00E9e" name="Quand une demande est soumise avec cette carte" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte bloqu\u00E9e" name="Alors la demande est refus\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte bloqu\u00E9e" name="Et le service de fraude est inform\u00E9" time="0"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte bloqu\u00E9e" name="Sc\u00E9nario: Utilisation d\&apos;une carte bloqu\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte consid\u00E9r\u00E9e frauduleuse" name="\u00C9tant donn\u00E9e une carte rapport\u00E9e frauduleuse" time="0"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte consid\u00E9r\u00E9e frauduleuse" name="Quand une demande est soumise avec cette carte" time="0"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte consid\u00E9r\u00E9e frauduleuse" name="Alors le service de fraude est alert\u00E9" time="0"/>
+  <testcase classname="Sc\u00E9nario: Utilisation d\&apos;une carte consid\u00E9r\u00E9e frauduleuse" name="Sc\u00E9nario: Utilisation d\&apos;une carte consid\u00E9r\u00E9e frauduleuse" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Impossibilit\u00E9 de trouver la distance" name="Quand je traite une demande" time="0"/>
+  <testcase classname="Sc\u00E9nario: Impossibilit\u00E9 de trouver la distance" name="Et qu\&apos;il n\&apos;est pas possible de trouver la distance" time="0"/>
+  <testcase classname="Sc\u00E9nario: Impossibilit\u00E9 de trouver la distance" name="Alors la demande est consid\u00E9r\u00E9e non frauduleuse" time="0"/>
+  <testcase classname="Sc\u00E9nario: Impossibilit\u00E9 de trouver la distance" name="Sc\u00E9nario: Impossibilit\u00E9 de trouver la distance" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 13:00:00 UTC |" name="\u00C9tant donn\u00E9 la transaction au G1T 1H5 \u00E0 2015-01-01 13:00:00 UTC dans l\&apos;historique" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 13:00:00 UTC |" name="Quand je fais un achat au 33142 \u00E0 2015-01-01 14:00:00 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 13:00:00 UTC |" name="Alors la demande est consid\u00E9r\u00E9e comme frauduleuse" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 13:00:00 UTC |" name="| G1T 1H5 | 2015-01-01 13:00:00 UTC |" time="0"/>
+  <testcase classname="| XXX XXX | 2015-01-01 13:15:00 UTC |" name="\u00C9tant donn\u00E9 la transaction au XXX XXX \u00E0 2015-01-01 13:15:00 UTC dans l\&apos;historique" time="0"/>
+  <testcase classname="| XXX XXX | 2015-01-01 13:15:00 UTC |" name="Quand je fais un achat au 33142 \u00E0 2015-01-01 14:00:00 UTC" time="0"/>
+  <testcase classname="| XXX XXX | 2015-01-01 13:15:00 UTC |" name="Alors la demande est consid\u00E9r\u00E9e comme frauduleuse" time="0"/>
+  <testcase classname="| XXX XXX | 2015-01-01 13:15:00 UTC |" name="| XXX XXX | 2015-01-01 13:15:00 UTC |" time="0"/>
+  <testcase classname="| XXX XXX | 2015-01-01 13:30:00 UTC |" name="\u00C9tant donn\u00E9 la transaction au XXX XXX \u00E0 2015-01-01 13:30:00 UTC dans l\&apos;historique" time="0"/>
+  <testcase classname="| XXX XXX | 2015-01-01 13:30:00 UTC |" name="Quand je fais un achat au 33142 \u00E0 2015-01-01 14:00:00 UTC" time="0"/>
+  <testcase classname="| XXX XXX | 2015-01-01 13:30:00 UTC |" name="Alors la demande est consid\u00E9r\u00E9e comme frauduleuse" time="0"/>
+  <testcase classname="| XXX XXX | 2015-01-01 13:30:00 UTC |" name="| XXX XXX | 2015-01-01 13:30:00 UTC |" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | G1T 1C4 | 2015-01-01 20:32:34 UTC | Non Frauduleuse |" name="\u00C9tant donn\u00E9 le dernier achat effectu\u00E9 au G1T 1H5 \u00E0 2015-01-01 20:00:00 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | G1T 1C4 | 2015-01-01 20:32:34 UTC | Non Frauduleuse |" name="Quand je fais un achat au G1T 1C4 \u00E0 2015-01-01 20:32:34 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | G1T 1C4 | 2015-01-01 20:32:34 UTC | Non Frauduleuse |" name="Alors la demande est consid\u00E9r\u00E9e comme Non Frauduleuse" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | G1T 1C4 | 2015-01-01 20:32:34 UTC | Non Frauduleuse |" name="| G1T 1H5 | 2015-01-01 20:00:00 UTC | G1T 1C4 | 2015-01-01 20:32:34 UTC | Non Frauduleuse |" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-01 22:00:00 UTC | Frauduleuse |" name="\u00C9tant donn\u00E9 le dernier achat effectu\u00E9 au G1T 1H5 \u00E0 2015-01-01 20:00:00 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-01 22:00:00 UTC | Frauduleuse |" name="Quand je fais un achat au 33142 \u00E0 2015-01-01 22:00:00 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-01 22:00:00 UTC | Frauduleuse |" name="Alors la demande est consid\u00E9r\u00E9e comme Frauduleuse" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-01 22:00:00 UTC | Frauduleuse |" name="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-01 22:00:00 UTC | Frauduleuse |" time="0.001"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-02 05:00:00 UTC | Frauduleuse |" name="\u00C9tant donn\u00E9 le dernier achat effectu\u00E9 au G1T 1H5 \u00E0 2015-01-01 20:00:00 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-02 05:00:00 UTC | Frauduleuse |" name="Quand je fais un achat au 33142 \u00E0 2015-01-02 05:00:00 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-02 05:00:00 UTC | Frauduleuse |" name="Alors la demande est consid\u00E9r\u00E9e comme Frauduleuse" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-02 05:00:00 UTC | Frauduleuse |" name="| G1T 1H5 | 2015-01-01 20:00:00 UTC | 33142 | 2015-01-02 05:00:00 UTC | Frauduleuse |" time="0.001"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | H7M 1Y7 | 2015-01-02 21:40:00 UTC | Non Frauduleuse |" name="\u00C9tant donn\u00E9 le dernier achat effectu\u00E9 au G1T 1H5 \u00E0 2015-01-01 20:00:00 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | H7M 1Y7 | 2015-01-02 21:40:00 UTC | Non Frauduleuse |" name="Quand je fais un achat au H7M 1Y7 \u00E0 2015-01-02 21:40:00 UTC" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | H7M 1Y7 | 2015-01-02 21:40:00 UTC | Non Frauduleuse |" name="Alors la demande est consid\u00E9r\u00E9e comme Non Frauduleuse" time="0"/>
+  <testcase classname="| G1T 1H5 | 2015-01-01 20:00:00 UTC | H7M 1Y7 | 2015-01-02 21:40:00 UTC | Non Frauduleuse |" name="| G1T 1H5 | 2015-01-01 20:00:00 UTC | H7M 1Y7 | 2015-01-02 21:40:00 UTC | Non Frauduleuse |" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande accept\u00E9e" name="Etant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande accept\u00E9e" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande accept\u00E9e" name="Alors la demande est autoris\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande accept\u00E9e" name="Et un relev\u00E9 est produit" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande accept\u00E9e" name="Et la transaction est conserv\u00E9e au compte" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande accept\u00E9e" name="Et le statut de la transaction est ATTENTE" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande accept\u00E9e" name="Et la demande est archiv\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande accept\u00E9e" name="Sc\u00E9nario: Demande accept\u00E9e" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande accept\u00E9e" name="Etant donn\u00E9 une demande trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande accept\u00E9e" name="Et la demande a \u00E9t\u00E9 autoris\u00E9e" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande accept\u00E9e" name="Quand un relev\u00E9 est produit suite \u00E0 la demande" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande accept\u00E9e" name="Alors le relev\u00E9 indique l\&apos;autorisation" time="0"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande accept\u00E9e" name="Et le num\u00E9ro de la transaction" time="0"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande accept\u00E9e" name="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande accept\u00E9e" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes erron\u00E9es" name="\u00C9tant donn\u00E9 une demande invalide" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes erron\u00E9es" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes erron\u00E9es" name="Alors la demande est archiv\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes erron\u00E9es" name="Et aucune transaction n\&apos;est g\u00E9n\u00E9r\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes erron\u00E9es" name="Et aucun relev\u00E9 n\&apos;est produit" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes erron\u00E9es" name="Et le marchand est notifi\u00E9 de l\&apos;erreur" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes erron\u00E9es" name="Sc\u00E9nario: Traitement des demandes erron\u00E9es" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec le montant manquant" name="\u00C9tant donn\u00E9e une demande d\&apos;achat sans montant" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec le montant manquant" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec le montant manquant" name="Alors la demande est erron\u00E9e par le montant" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec le montant manquant" name="Sc\u00E9nario: Demandes avec le montant manquant" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un montant inf\u00E9rieur \u00E0 1 cent" name="\u00C9tant donn\u00E9 une demande d\&apos;achat avec un montant de 0.009" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un montant inf\u00E9rieur \u00E0 1 cent" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un montant inf\u00E9rieur \u00E0 1 cent" name="Alors la demande est erron\u00E9e par le montant" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un montant inf\u00E9rieur \u00E0 1 cent" name="Sc\u00E9nario: Demandes avec un montant inf\u00E9rieur \u00E0 1 cent" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec le num\u00E9ro de carte de cr\u00E9dit manquant" name="\u00C9tant donn\u00E9 une demande d\&apos;achat sans num\u00E9ro de carte de cr\u00E9dit" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec le num\u00E9ro de carte de cr\u00E9dit manquant" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec le num\u00E9ro de carte de cr\u00E9dit manquant" name="Alors la demande est erron\u00E9e par la carte de cr\u00E9dit" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec le num\u00E9ro de carte de cr\u00E9dit manquant" name="Sc\u00E9nario: Demandes avec le num\u00E9ro de carte de cr\u00E9dit manquant" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 | erron\u00E9e par la carte de cr\u00E9dit |" name="\u00C9tant donn\u00E9 une demande d\&apos;achat avec le num\u00E9ro de carte de cr\u00E9dit 1 2 3 4 5 6 7 8" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 | erron\u00E9e par la carte de cr\u00E9dit |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 | erron\u00E9e par la carte de cr\u00E9dit |" name="Alors la demande est erron\u00E9e par la carte de cr\u00E9dit" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 | erron\u00E9e par la carte de cr\u00E9dit |" name="| 1 2 3 4 5 6 7 8 | erron\u00E9e par la carte de cr\u00E9dit |" time="0.002"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 9 | valide |" name="\u00C9tant donn\u00E9 une demande d\&apos;achat avec le num\u00E9ro de carte de cr\u00E9dit 1 2 3 4 5 6 7 8 9" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 9 | valide |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 9 | valide |" name="Alors la demande est valide" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 9 | valide |" name="| 1 2 3 4 5 6 7 8 9 | valide |" time="0"/>
+  <testcase classname="| 123456789 | valide |" name="\u00C9tant donn\u00E9 une demande d\&apos;achat avec le num\u00E9ro de carte de cr\u00E9dit 123456789" time="0"/>
+  <testcase classname="| 123456789 | valide |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 123456789 | valide |" name="Alors la demande est valide" time="0"/>
+  <testcase classname="| 123456789 | valide |" name="| 123456789 | valide |" time="0.001"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 9 0 | valide |" name="\u00C9tant donn\u00E9 une demande d\&apos;achat avec le num\u00E9ro de carte de cr\u00E9dit 1 2 3 4 5 6 7 8 9 0" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 9 0 | valide |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 9 0 | valide |" name="Alors la demande est valide" time="0"/>
+  <testcase classname="| 1 2 3 4 5 6 7 8 9 0 | valide |" name="| 1 2 3 4 5 6 7 8 9 0 | valide |" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit qui contient des caract\u00E8res non-num\u00E9riques" name="\u00C9tant donn\u00E9 une demande d\&apos;achat avec le num\u00E9ro de carte de cr\u00E9dit \&quot;12x345678910\&quot;" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit qui contient des caract\u00E8res non-num\u00E9riques" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit qui contient des caract\u00E8res non-num\u00E9riques" name="Alors la demande est erron\u00E9e par la carte de cr\u00E9dit" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit qui contient des caract\u00E8res non-num\u00E9riques" name="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit qui contient des caract\u00E8res non-num\u00E9riques" time="0"/>
+  <testcase classname="| 01\/02 | valide |" name="\u00C9tant donn\u00E9 une demande avec la date d\&apos;expiration 01\/02" time="0"/>
+  <testcase classname="| 01\/02 | valide |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 01\/02 | valide |" name="Alors la demande est valide" time="0"/>
+  <testcase classname="| 01\/02 | valide |" name="| 01\/02 | valide |" time="0"/>
+  <testcase classname="| 1\/2 | valide |" name="\u00C9tant donn\u00E9 une demande avec la date d\&apos;expiration 1\/2" time="0"/>
+  <testcase classname="| 1\/2 | valide |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 1\/2 | valide |" name="Alors la demande est valide" time="0"/>
+  <testcase classname="| 1\/2 | valide |" name="| 1\/2 | valide |" time="0.001"/>
+  <testcase classname="| 0102 | erron\u00E9e par la carte de cr\u00E9dit |" name="\u00C9tant donn\u00E9 une demande avec la date d\&apos;expiration 0102" time="0.001"/>
+  <testcase classname="| 0102 | erron\u00E9e par la carte de cr\u00E9dit |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 0102 | erron\u00E9e par la carte de cr\u00E9dit |" name="Alors la demande est erron\u00E9e par la carte de cr\u00E9dit" time="0"/>
+  <testcase classname="| 0102 | erron\u00E9e par la carte de cr\u00E9dit |" name="| 0102 | erron\u00E9e par la carte de cr\u00E9dit |" time="0"/>
+  <testcase classname="| 01-02 | erron\u00E9e par la carte de cr\u00E9dit |" name="\u00C9tant donn\u00E9 une demande avec la date d\&apos;expiration 01-02" time="0"/>
+  <testcase classname="| 01-02 | erron\u00E9e par la carte de cr\u00E9dit |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 01-02 | erron\u00E9e par la carte de cr\u00E9dit |" name="Alors la demande est erron\u00E9e par la carte de cr\u00E9dit" time="0"/>
+  <testcase classname="| 01-02 | erron\u00E9e par la carte de cr\u00E9dit |" name="| 01-02 | erron\u00E9e par la carte de cr\u00E9dit |" time="0"/>
+  <testcase classname="| 2015\/01\/02 | erron\u00E9e par la carte de cr\u00E9dit |" name="\u00C9tant donn\u00E9 une demande avec la date d\&apos;expiration 2015\/01\/02" time="0"/>
+  <testcase classname="| 2015\/01\/02 | erron\u00E9e par la carte de cr\u00E9dit |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 2015\/01\/02 | erron\u00E9e par la carte de cr\u00E9dit |" name="Alors la demande est erron\u00E9e par la carte de cr\u00E9dit" time="0"/>
+  <testcase classname="| 2015\/01\/02 | erron\u00E9e par la carte de cr\u00E9dit |" name="| 2015\/01\/02 | erron\u00E9e par la carte de cr\u00E9dit |" time="0"/>
+  <testcase classname="| 32\/15 | erron\u00E9e par la carte de cr\u00E9dit |" name="\u00C9tant donn\u00E9 une demande avec la date d\&apos;expiration 32\/15" time="0"/>
+  <testcase classname="| 32\/15 | erron\u00E9e par la carte de cr\u00E9dit |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 32\/15 | erron\u00E9e par la carte de cr\u00E9dit |" name="Alors la demande est erron\u00E9e par la carte de cr\u00E9dit" time="0"/>
+  <testcase classname="| 32\/15 | erron\u00E9e par la carte de cr\u00E9dit |" name="| 32\/15 | erron\u00E9e par la carte de cr\u00E9dit |" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit avec des espaces" name="\u00C9tant donn\u00E9 une demande d\&apos;achat avec le num\u00E9ro de carte de cr\u00E9dit 1 2 3 4 5 6 7 8 9" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit avec des espaces" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit avec des espaces" name="Alors la demande est valide" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit avec des espaces" name="Sc\u00E9nario: Demandes avec un num\u00E9ro de carte de cr\u00E9dit avec des espaces" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes refus\u00E9es" name="Quand une demande d\&apos;achat est refus\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes refus\u00E9es" name="Alors la demande est archiv\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes refus\u00E9es" name="Et aucune transaction n\&apos;est g\u00E9n\u00E9r\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes refus\u00E9es" name="Et un relev\u00E9 est produit" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes refus\u00E9es" name="Et la demande est archiv\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Traitement des demandes refus\u00E9es" name="Sc\u00E9nario: Traitement des demandes refus\u00E9es" time="0"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande refus\u00E9e" name="Quand une demande d\&apos;achat est refus\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande refus\u00E9e" name="Alors la demande est refus\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande refus\u00E9e" name="Et aucune raison n\&apos;est donn\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande refus\u00E9e" name="Sc\u00E9nario: Production d\&apos;un relev\u00E9 pour une demande refus\u00E9e" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Identification d\&apos;une carte VISA par le num\u00E9ro de carte" name="\u00C9tant donn\u00E9 un num\u00E9ro de carte d\u00E9butant par un \&apos;4\&apos;" time="0"/>
+  <testcase classname="Sc\u00E9nario: Identification d\&apos;une carte VISA par le num\u00E9ro de carte" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Identification d\&apos;une carte VISA par le num\u00E9ro de carte" name="Alors c\&apos;est une carte VISA" time="0"/>
+  <testcase classname="Sc\u00E9nario: Identification d\&apos;une carte VISA par le num\u00E9ro de carte" name="Sc\u00E9nario: Identification d\&apos;une carte VISA par le num\u00E9ro de carte" time="0"/>
+  <testcase classname="| 12 | erron\u00E9e |" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="| 12 | erron\u00E9e |" name="Et une carte de cr\u00E9dit VISA avec 12 chiffres" time="0"/>
+  <testcase classname="| 12 | erron\u00E9e |" name="Quand la demande est trait\u00E9e" time="0.001"/>
+  <testcase classname="| 12 | erron\u00E9e |" name="Alors la demande est consid\u00E9r\u00E9e erron\u00E9e" time="0"/>
+  <testcase classname="| 12 | erron\u00E9e |" name="| 12 | erron\u00E9e |" time="0"/>
+  <testcase classname="| 13 | valide |" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="| 13 | valide |" name="Et une carte de cr\u00E9dit VISA avec 13 chiffres" time="0"/>
+  <testcase classname="| 13 | valide |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 13 | valide |" name="Alors la demande est consid\u00E9r\u00E9e valide" time="0"/>
+  <testcase classname="| 13 | valide |" name="| 13 | valide |" time="0"/>
+  <testcase classname="| 14 | erron\u00E9e |" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="| 14 | erron\u00E9e |" name="Et une carte de cr\u00E9dit VISA avec 14 chiffres" time="0"/>
+  <testcase classname="| 14 | erron\u00E9e |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 14 | erron\u00E9e |" name="Alors la demande est consid\u00E9r\u00E9e erron\u00E9e" time="0"/>
+  <testcase classname="| 14 | erron\u00E9e |" name="| 14 | erron\u00E9e |" time="0"/>
+  <testcase classname="| 16 | valide |" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="| 16 | valide |" name="Et une carte de cr\u00E9dit VISA avec 16 chiffres" time="0"/>
+  <testcase classname="| 16 | valide |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 16 | valide |" name="Alors la demande est consid\u00E9r\u00E9e valide" time="0"/>
+  <testcase classname="| 16 | valide |" name="| 16 | valide |" time="0.001"/>
+  <testcase classname="| 17 | erron\u00E9e |" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="| 17 | erron\u00E9e |" name="Et une carte de cr\u00E9dit VISA avec 17 chiffres" time="0"/>
+  <testcase classname="| 17 | erron\u00E9e |" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="| 17 | erron\u00E9e |" name="Alors la demande est consid\u00E9r\u00E9e erron\u00E9e" time="0"/>
+  <testcase classname="| 17 | erron\u00E9e |" name="| 17 | erron\u00E9e |" time="0"/>
+  <testcase classname="Sc\u00E9nario: Validation du Checksum pour une carte VISA" name="\u00C9tant donn\u00E9 une demande valide" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Validation du Checksum pour une carte VISA" name="Et une carte de cr\u00E9dit VISA avec un checksum invalide" time="0"/>
+  <testcase classname="Sc\u00E9nario: Validation du Checksum pour une carte VISA" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Validation du Checksum pour une carte VISA" name="Alors la demande est consid\u00E9r\u00E9e erron\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Validation du Checksum pour une carte VISA" name="Sc\u00E9nario: Validation du Checksum pour une carte VISA" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant accept\u00E9" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant accept\u00E9" name="Et le montant est accept\u00E9" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant accept\u00E9" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant accept\u00E9" name="Alors le solde du compte est modifi\u00E9" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant accept\u00E9" name="Sc\u00E9nario: Demande avec un montant accept\u00E9" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant exc\u00E9dant le solde" name="\u00C9tant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant exc\u00E9dant le solde" name="Et le montant n\&apos;est pas accept\u00E9" time="0.001"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant exc\u00E9dant le solde" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant exc\u00E9dant le solde" name="Alors le solde du compte n\&apos;est pas modifi\u00E9" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un montant exc\u00E9dant le solde" name="Sc\u00E9nario: Demande avec un montant exc\u00E9dant le solde" time="0"/>
+  <testcase classname="Sc\u00E9nario: Conservation du marchand dans la transaction" name="Etant donn\u00E9 une demande valide" time="0"/>
+  <testcase classname="Sc\u00E9nario: Conservation du marchand dans la transaction" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Conservation du marchand dans la transaction" name="Alors le marchand est conserv\u00E9 dans la transaction" time="0"/>
+  <testcase classname="Sc\u00E9nario: Conservation du marchand dans la transaction" name="Sc\u00E9nario: Conservation du marchand dans la transaction" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un terminal inexistant" name="\u00C9tant donn\u00E9 une demande valide et un terminal inexistant" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un terminal inexistant" name="Quand la demande est trait\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un terminal inexistant" name="Alors la demande est refus\u00E9e" time="0"/>
+  <testcase classname="Sc\u00E9nario: Demande avec un terminal inexistant" name="Sc\u00E9nario: Demande avec un terminal inexistant" time="0"/>
+</testsuite>

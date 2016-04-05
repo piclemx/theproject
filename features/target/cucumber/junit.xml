@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="56" time="9.072941">
+<testcase classname="Analyser en fonction du compte client" name="Demandes avec un numéro de carte de crédit inexistant" time="5.469548">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et un numéro de carte associé à aucun compte................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est refusée................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Analyser en fonction du compte client" name="Demandes avec une carte expirée" time="0.095161">
+<system-out><![CDATA[Étant donné que la date d'aujourd'hui est le 02/15..........................passed
+Et une demande avec une date d'expiration 01/14 pour la carte...............passed
+Quand la demande est traitée................................................passed
+Alors la demande est refusé.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Analyser en fonction du compte client" name="Demandes avec une carte expirée" time="0.050371">
+<system-out><![CDATA[Étant donné que la date d'aujourd'hui est le 02/15..........................passed
+Et une demande avec une date d'expiration 01/15 pour la carte...............passed
+Quand la demande est traitée................................................passed
+Alors la demande est refusé.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Analyser en fonction du compte client" name="Demandes avec une carte expirée" time="0.072711">
+<system-out><![CDATA[Étant donné que la date d'aujourd'hui est le 02/15..........................passed
+Et une demande avec une date d'expiration 02/15 pour la carte...............passed
+Quand la demande est traitée................................................passed
+Alors la demande est ok.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Analyser en fonction du compte client" name="Demandes avec une carte expirée" time="0.05226">
+<system-out><![CDATA[Étant donné que la date d'aujourd'hui est le 02/15..........................passed
+Et une demande avec une date d'expiration 03/15 pour la carte...............passed
+Quand la demande est traitée................................................passed
+Alors la demande est ok.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Analyser en fonction du compte client" name="Demandes avec un montant excédant le solde" time="0.060175">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit associée à un compte avec une limite de crédit de 1200.passed
+Et un montant demandé de 1000...............................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est ok.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Analyser en fonction du compte client" name="Demandes avec un montant excédant le solde" time="0.061859">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit associée à un compte avec une limite de crédit de 1200.passed
+Et un montant demandé de 1200...............................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est ok.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Analyser en fonction du compte client" name="Demandes avec un montant excédant le solde" time="0.067837">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit associée à un compte avec une limite de crédit de 1200.passed
+Et un montant demandé de 2000...............................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est refusé.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Confirmation par le marchand" name="Soumission de transactions admissibles" time="0.27162">
+<system-out><![CDATA[Étant donné un marchand avec des transactions admissibles en attente........passed
+Quand il soumet les transactions............................................passed
+Alors les transactions sont confirmées......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Confirmation par le marchand" name="Soumission de transactions par un marchand n'ayant aucune transaction à son effectif" time="0.028711">
+<system-out><![CDATA[Étant donné un marchand sans transaction....................................passed
+Quand il soumet aucune transaction..........................................passed
+Alors rien n'est effectué...................................................passed
+Et aucune erreur n’est reportée.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Confirmation par le marchand" name="Soumission d'une transaction déjà confirmée" time="0.034112">
+<system-out><![CDATA[Étant donné une transaction déjà confirmée..................................passed
+Quand le marchand soumet cette transaction..................................passed
+Alors la transaction reste dans son statut actuel...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Confirmation par le marchand" name="Soumission de transactions ayant une transaction inadmissible" time="0.067489">
+<system-out><![CDATA[Étant donné un marchand avec des transactions admissibles...................passed
+Et ayant des transactions inadmissible......................................passed
+Quand il soumet les transactions inadmissibles..............................passed
+Alors aucune transaction n’est confirmée....................................passed
+Et la requête est rejetée...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Confirmation par le marchand" name="Soumission de transactions par un marchand inexistant" time="0.015885">
+<system-out><![CDATA[Étant donné un numéro de marchand inexistant................................passed
+Quand le marchand inexistant soumet une liste de transaction................passed
+Alors la resource est donc introuvable......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Confirmation par le marchand" name="Soumission de transactions inexistantes" time="0.026266">
+<system-out><![CDATA[Étant donné des transactions inexistante....................................passed
+Quand le marchand soumet ces transactions inexistantes......................passed
+Alors une erreur se produit.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Code postal de la demande non reconnu" time="0.065686">
+<system-out><![CDATA[Étant donné un code postal non reconnu......................................passed
+Quand je fais un achat à ce code postal.....................................passed
+Alors la demande est considérée non frauduleuse.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Utilisation d'une carte bloquée" time="0.345762">
+<system-out><![CDATA[Étant donné une carte bloquée...............................................passed
+Quand une demande est soumise avec cette carte..............................passed
+Alors la demande est refusée................................................passed
+Et le service de fraude est informé.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Utilisation d'une carte considérée frauduleuse" time="0.210889">
+<system-out><![CDATA[Étant donnée une carte rapportée frauduleuse................................passed
+Quand une demande est soumise avec cette carte..............................passed
+Alors le service de fraude est alerté.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Impossibilité de trouver la distance" time="0.673424">
+<system-out><![CDATA[Quand je traite une demande.................................................passed
+Et qu'il n'est pas possible de trouver la distance..........................passed
+Alors la demande est considérée non frauduleuse.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Historique avec des codes postaux non reconnus" time="0.008486">
+<system-out><![CDATA[Étant donné la transaction au G1T 1H5 à 2015-01-01 13:00:00 UTC dans l'historique.passed
+Quand je fais un achat au 33142 à 2015-01-01 14:00:00 UTC...................passed
+Alors la demande est considérée comme frauduleuse...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Historique avec des codes postaux non reconnus" time="0.006165">
+<system-out><![CDATA[Étant donné la transaction au XXX XXX à 2015-01-01 13:15:00 UTC dans l'historique.passed
+Quand je fais un achat au 33142 à 2015-01-01 14:00:00 UTC...................passed
+Alors la demande est considérée comme frauduleuse...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Historique avec des codes postaux non reconnus" time="0.007122">
+<system-out><![CDATA[Étant donné la transaction au XXX XXX à 2015-01-01 13:30:00 UTC dans l'historique.passed
+Quand je fais un achat au 33142 à 2015-01-01 14:00:00 UTC...................passed
+Alors la demande est considérée comme frauduleuse...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Détection de la fraude par distance des codes postaux" time="0.007439">
+<system-out><![CDATA[Étant donné le dernier achat effectué au G1T 1H5 à 2015-01-01 20:00:00 UTC..passed
+Quand je fais un achat au G1T 1C4 à 2015-01-01 20:32:34 UTC.................passed
+Alors la demande est considérée comme Non Frauduleuse.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Détection de la fraude par distance des codes postaux" time="0.00656">
+<system-out><![CDATA[Étant donné le dernier achat effectué au G1T 1H5 à 2015-01-01 20:00:00 UTC..passed
+Quand je fais un achat au 33142 à 2015-01-01 22:00:00 UTC...................passed
+Alors la demande est considérée comme Frauduleuse...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Détection de la fraude par distance des codes postaux" time="0.007194">
+<system-out><![CDATA[Étant donné le dernier achat effectué au G1T 1H5 à 2015-01-01 20:00:00 UTC..passed
+Quand je fais un achat au 33142 à 2015-01-02 05:00:00 UTC...................passed
+Alors la demande est considérée comme Frauduleuse...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Détection automatique de la fraude par la distance en km" name="Détection de la fraude par distance des codes postaux" time="0.007166">
+<system-out><![CDATA[Étant donné le dernier achat effectué au G1T 1H5 à 2015-01-01 20:00:00 UTC..passed
+Quand je fais un achat au H7M 1Y7 à 2015-01-02 21:40:00 UTC.................passed
+Alors la demande est considérée comme Non Frauduleuse.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demande acceptée" time="0.106004">
+<system-out><![CDATA[Etant donné une demande valide..............................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est autorisée..............................................passed
+Et un relevé est produit....................................................passed
+Et la transaction est conservée au compte...................................passed
+Et le statut de la transaction est ATTENTE..................................passed
+Et la demande est archivée..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Production d'un relevé pour une demande acceptée" time="0.072205">
+<system-out><![CDATA[Etant donné une demande traitée.............................................passed
+Et la demande a été autorisée...............................................passed
+Quand un relevé est produit suite à la demande..............................passed
+Alors le relevé indique l'autorisation......................................passed
+Et le numéro de la transaction..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Traitement des demandes erronées" time="0.053467">
+<system-out><![CDATA[Étant donné une demande invalide............................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est archivée...............................................passed
+Et aucune transaction n'est générée.........................................passed
+Et aucun relevé n'est produit...............................................passed
+Et le marchand est notifié de l'erreur......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec le montant manquant" time="0.034243">
+<system-out><![CDATA[Étant donnée une demande d'achat sans montant...............................passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par le montant.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec un montant inférieur à 1 cent" time="0.026278">
+<system-out><![CDATA[Étant donné une demande d'achat avec un montant de 0.009....................passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par le montant.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec le numéro de carte de crédit manquant" time="0.026836">
+<system-out><![CDATA[Étant donné une demande d'achat sans numéro de carte de crédit..............passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par la carte de crédit.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec un numéro de carte de crédit de moins de 9 chiffres" time="0.033562">
+<system-out><![CDATA[Étant donné une demande d'achat avec le numéro de carte de crédit 1 2 3 4 5 6 7 8.passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par la carte de crédit.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec un numéro de carte de crédit de moins de 9 chiffres" time="0.03431">
+<system-out><![CDATA[Étant donné une demande d'achat avec le numéro de carte de crédit 1 2 3 4 5 6 7 8 9.passed
+Quand la demande est traitée................................................passed
+Alors la demande est valide.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec un numéro de carte de crédit de moins de 9 chiffres" time="0.033136">
+<system-out><![CDATA[Étant donné une demande d'achat avec le numéro de carte de crédit 123456789.passed
+Quand la demande est traitée................................................passed
+Alors la demande est valide.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec un numéro de carte de crédit de moins de 9 chiffres" time="0.03195">
+<system-out><![CDATA[Étant donné une demande d'achat avec le numéro de carte de crédit 1 2 3 4 5 6 7 8 9 0.passed
+Quand la demande est traitée................................................passed
+Alors la demande est valide.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec un numéro de carte de crédit qui contient des caractères non-numériques" time="0.034002">
+<system-out><![CDATA[Étant donné une demande d'achat avec le numéro de carte de crédit "12x345678910".passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par la carte de crédit.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Vérification du format de la date d'expiration" time="0.05959">
+<system-out><![CDATA[Étant donné une demande avec la date d'expiration 01/02.....................passed
+Quand la demande est traitée................................................passed
+Alors la demande est valide.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Vérification du format de la date d'expiration" time="0.071739">
+<system-out><![CDATA[Étant donné une demande avec la date d'expiration 1/2.......................passed
+Quand la demande est traitée................................................passed
+Alors la demande est valide.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Vérification du format de la date d'expiration" time="0.038914">
+<system-out><![CDATA[Étant donné une demande avec la date d'expiration 0102......................passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par la carte de crédit.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Vérification du format de la date d'expiration" time="0.036991">
+<system-out><![CDATA[Étant donné une demande avec la date d'expiration 01-02.....................passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par la carte de crédit.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Vérification du format de la date d'expiration" time="0.031684">
+<system-out><![CDATA[Étant donné une demande avec la date d'expiration 2015/01/02................passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par la carte de crédit.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Vérification du format de la date d'expiration" time="0.041301">
+<system-out><![CDATA[Étant donné une demande avec la date d'expiration 32/15.....................passed
+Quand la demande est traitée................................................passed
+Alors la demande est erronée par la carte de crédit.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demandes avec un numéro de carte de crédit avec des espaces" time="0.03172">
+<system-out><![CDATA[Étant donné une demande d'achat avec le numéro de carte de crédit 1 2 3 4 5 6 7 8 9.passed
+Quand la demande est traitée................................................passed
+Alors la demande est valide.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Traitement des demandes refusées" time="0.03837">
+<system-out><![CDATA[Quand une demande d'achat est refusée.......................................passed
+Alors la demande est archivée...............................................passed
+Et aucune transaction n'est générée.........................................passed
+Et un relevé est produit....................................................passed
+Et la demande est archivée..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Production d'un relevé pour une demande refusée" time="0.03961">
+<system-out><![CDATA[Quand une demande d'achat est refusée.......................................passed
+Alors la demande est refusée................................................passed
+Et aucune raison n'est donnée...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Identification d'une carte VISA par le numéro de carte" time="0.047592">
+<system-out><![CDATA[Étant donné un numéro de carte débutant par un '4'..........................passed
+Quand la demande est traitée................................................passed
+Alors c'est une carte VISA..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Nombre de chiffres pour un numéro de carte VISA" time="0.028561">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit VISA avec 12 chiffres................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est considérée erronée.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Nombre de chiffres pour un numéro de carte VISA" time="0.035249">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit VISA avec 13 chiffres................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est considérée valide......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Nombre de chiffres pour un numéro de carte VISA" time="0.028333">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit VISA avec 14 chiffres................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est considérée erronée.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Nombre de chiffres pour un numéro de carte VISA" time="0.030058">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit VISA avec 16 chiffres................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est considérée valide......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Nombre de chiffres pour un numéro de carte VISA" time="0.029617">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit VISA avec 17 chiffres................................passed
+Quand la demande est traitée................................................passed
+Alors la demande est considérée erronée.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Validation du Checksum pour une carte VISA" time="0.04936">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et une carte de crédit VISA avec un checksum invalide.......................passed
+Quand la demande est traitée................................................passed
+Alors la demande est considérée erronée.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demande avec un montant accepté" time="0.056775">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et le montant est accepté...................................................passed
+Quand la demande est traitée................................................passed
+Alors le solde du compte est modifié........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demande avec un montant excédant le solde" time="0.067202">
+<system-out><![CDATA[Étant donné une demande valide..............................................passed
+Et le montant n'est pas accepté.............................................passed
+Quand la demande est traitée................................................passed
+Alors le solde du compte n'est pas modifié..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Conservation du marchand dans la transaction" time="0.06793">
+<system-out><![CDATA[Etant donné une demande valide..............................................passed
+Quand la demande est traitée................................................passed
+Alors le marchand est conservé dans la transaction..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Traiter les demandes électroniques d'achat" name="Demande avec un terminal inexistant" time="0.036454">
+<system-out><![CDATA[Étant donné une demande valide et un terminal inexistant....................passed
+Quand la demande est traitée................................................passed
+Alors la demande est refusée................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
